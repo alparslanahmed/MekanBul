@@ -1,0 +1,8 @@
+body {
+  height: auto;
+  min-height: 100%;
+}
+
+.scroll, .angular-leaflet-map {
+  height: 100%;
+}
