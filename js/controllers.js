@@ -75,12 +75,14 @@ angular.module('controllers', [])
         $scope.map.center.zoom = 18;
     }
 
+    $scope.benibul();
+    
     $scope.$on('leafletDirectiveMarker.mousedown', function(event, args){
         var markerEvent = args.leafletEvent;
         id = markerEvent.target.options.title;
         $location.path( "/app/mekan/"+id+"" );
     });
-
+    
 })
 
 .controller('ListeCtrl', function($scope, $location) {
